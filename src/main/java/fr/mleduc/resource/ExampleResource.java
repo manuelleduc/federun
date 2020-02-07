@@ -1,4 +1,4 @@
-package fr.mleduc;
+package fr.mleduc.resource;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
