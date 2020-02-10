@@ -1,19 +1,13 @@
 package fr.mleduc.service.user;
 
+import fr.mleduc.expt.EmailAlreadyExistsException;
+import fr.mleduc.expt.InvalidPasswordException;
+import fr.mleduc.expt.UserNotFoundException;
+import fr.mleduc.expt.UsernameAlreadyExistsException;
 import fr.mleduc.panache.FederunUser;
-import fr.mleduc.resource.api.model.User;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.transaction.Transactional;
+public interface UserService {
+    FederunUser login(String email, String password) throws UserNotFoundException, InvalidPasswordException;
 
-@ApplicationScoped
-public class UserService {
-
-    @Transactional
-    public void createUser(User user) {
-        FederunUser federunUserPanache = new FederunUser();
-        federunUserPanache.login = user.username;
-        federunUserPanache.password = user.password;
-        federunUserPanache.persist();
-    }
+    FederunUser create(String username, String email, String password) throws UsernameAlreadyExistsException, EmailAlreadyExistsException;
 }
