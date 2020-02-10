@@ -8,4 +8,5 @@ import javax.persistence.Entity;
 public class FederunUser extends PanacheEntity {
     public String login;
     public String password;
+    public String role;
 }
