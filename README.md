@@ -28,3 +28,9 @@ Or you can use Docker to build the native executable using: `./mvnw package -Pna
 You can then execute your binary: `./target/federun-1.0.0-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image-guide .
+
+# Useful projects 
+
+- https://github.com/jonashackt/spring-boot-vuejs/
+- https://github.com/diegocamara/realworld-api-quarkus
+- https://github.com/gothinkster/vue-realworld-example-app
