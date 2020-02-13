@@ -2,14 +2,20 @@
     <div id="app">
         <div id="nav">
             <router-link to="/">Hello</router-link>
+            |
             <router-link to="/world">World</router-link>
+            |
+            <router-link to="/user">User Info</router-link>
+            |
+            <router-link to="/login" >Login</router-link>
+            |
+            <router-link to="/signup">Sign Up</router-link>
         </div>
         <router-view :hellomsg="msg"></router-view>
     </div>
 </template>
 
 <script>
-
     export default {
         name: 'app',
         data() {

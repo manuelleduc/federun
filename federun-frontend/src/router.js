@@ -2,6 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import World from "./components/World";
+import Login from "./components/Login";
+import SignUp from "./components/SignUp";
+import UserInfo from "./components/UserInfo";
 
 Vue.use(Router);
 
@@ -10,6 +13,9 @@ const router = new Router({
     routes: [
         {path: '/', component: Hello},
         {path: '/world', component: World},
+        {path: '/login', component: Login},
+        {path: '/signup', component: SignUp},
+        {path: '/user', component: UserInfo},
         // otherwise redirect to home
         {path: '*', redirect: '/'}
     ]
