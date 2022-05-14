@@ -7,6 +7,7 @@ import About from "./components/About.vue";
 
 const routes: Array<RouteRecordRaw> = [
   { path: "/", name: "Home", component: Home },
+  { path: "/upload", name: "Upload", component: About }, // TODO: define an upload component
   { path: "/about", name: "About", component: About },
 ];
 
